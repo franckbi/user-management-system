@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "baseUrl": ".",
+    // alias "@shared/*" → "../shared/*"
+    "paths": {
+      "@shared/*": ["../shared/*"]
+    },
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  // make sure TS actually reads your shared folder too
+  "include": ["src/**/*", "../shared/**/*"]
+}

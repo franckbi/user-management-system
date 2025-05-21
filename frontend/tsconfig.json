@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    // ← change here:
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["..shared/*"]
+    },
+
+    "jsx": "react-jsx"
+  },
+
+  // ← tell TS about your shared folder too:
+  "include": ["src/**/*", "..shared/**/*"]
+}
