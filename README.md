@@ -49,7 +49,7 @@ backend — Node.js/Express API on port 8080
 
 frontend — React build served on port 3000
 
-db (optional) — Postgres container for future data persistence
+db  — Postgres container for future data persistence
 
 Proxy configuration: CRA dev server proxies /api to the backend during local development; production build uses a static server without proxy.
 
