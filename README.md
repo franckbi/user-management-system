@@ -51,6 +51,22 @@ frontend — React build served on port 3000
 
 db  — Postgres container for future data persistence
 
+
+
+-------
+
+Next Steps / Bonus Features
+
+Add PUT (update) and DELETE endpoints in the UI to edit or remove users.
+
+Implement sorting and filtering on the user list.
+
+Add form validation on the front end with Yup or Zod.
+
+Write unit tests (Jest + React Testing Library + supertest).
+
+Enhance responsive design or adopt a theme provider switcher (dark/light mode).
+
 Proxy configuration: CRA dev server proxies /api to the backend during local development; production build uses a static server without proxy.
 
 
